@@ -34,7 +34,7 @@ public String reverse(String str)
 public String noSpaces(String sWord){
   String newWord = new String();
   for(int i = 0; i < sWord.length(); i++){
-    if(sWord.charAt(i) != ' '){
+    if(sWord.charAt(i) != ' ' || sWord.charAt(i) != ',' || sWord.charAt(i) != '!' || sWord.charAt(i) != '\'' ){
       newWord += sWord.substring(i, i+1);
     }
   }

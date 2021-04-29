@@ -1,5 +1,6 @@
 public void setup()
 {
+  //String lines[] = {"test", "rotator", "rewriter", "nurses run", "Madam, I'm Adam!", "A Man! A Plan! A Canal! Panama!"};
   String lines[] = loadStrings("palindromes.txt");
   System.out.println("there are " + lines.length + " lines");
   for (int i=0; i < lines.length; i++) 
@@ -31,11 +32,11 @@ public String reverse(String str)
   return sNew;
 }
 
-public String noSpaces(String sWord){
+public String noSpaces(String sWord) {
   String newWord = new String();
-  for(int i = 0; i < sWord.length(); i++){
-    if(sWord.charAt(i) != ' ' || sWord.charAt(i) != ',' || sWord.charAt(i) != '!' || sWord.charAt(i) != '\'' ){
-      newWord += sWord.substring(i, i+1);
+  for (int i = 0; i < sWord.length(); i++) {
+    if (sWord.charAt(i) != ' ' && sWord.charAt(i) != ',' && sWord.charAt(i) != '!' && sWord.charAt(i) != '\'' ) {
+      newWord += sWord.charAt(i);
     }
   }
   return newWord;
